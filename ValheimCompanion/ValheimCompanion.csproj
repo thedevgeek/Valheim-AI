@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyName>ValheimCompanion</AssemblyName>
+    <RootNamespace>ValheimCompanion</RootNamespace>
+    <ValheimDir Condition="'$(ValheimDir)' == ''">M:\Steam\steamapps\common\Valheim</ValheimDir>
+    <BepInExDir Condition="'$(BepInExDir)' == ''">$(ValheimDir)\BepInEx</BepInExDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>$(BepInExDir)\core\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>$(BepInExDir)\core\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="assembly_valheim">
+      <HintPath>$(ValheimDir)\valheim_Data\Managed\assembly_valheim.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(ValheimDir)\valheim_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(ValheimDir)\valheim_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>$(ValheimDir)\valheim_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="ValidateLocalReferences" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(BepInExDir)\core\0Harmony.dll')"
+           Text="0Harmony.dll was not found at '$(BepInExDir)\core'. Install the BepInEx Valheim pack or set BepInExDir." />
+    <Error Condition="!Exists('$(BepInExDir)\core\BepInEx.dll')"
+           Text="BepInEx was not found at '$(BepInExDir)'. Install BepInEx for Valheim or set BepInExDir." />
+    <Error Condition="!Exists('$(ValheimDir)\valheim_Data\Managed\assembly_valheim.dll')"
+           Text="Valheim game assemblies were not found under '$(ValheimDir)'. Set ValheimDir to your game folder." />
+    <Error Condition="!Exists('$(ValheimDir)\valheim_Data\Managed\UnityEngine.CoreModule.dll')"
+           Text="UnityEngine.CoreModule.dll was not found under '$(ValheimDir)\\valheim_Data\\Managed'." />
+  </Target>
+
+  <Target Name="DeployPlugin" AfterTargets="Build" Condition="'$(DeployToGame)' == 'true'">
+    <Error Condition="!Exists('$(BepInExDir)\plugins')"
+           Text="BepInEx plugins folder was not found at '$(BepInExDir)\plugins'." />
+    <MakeDir Directories="$(BepInExDir)\plugins\ValheimCompanion" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(BepInExDir)\plugins\ValheimCompanion" />
+  </Target>
+</Project>

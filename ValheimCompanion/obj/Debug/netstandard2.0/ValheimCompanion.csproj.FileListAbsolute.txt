@@ -1,0 +1,5 @@
+C:\Users\watso\OneDrive\Documents\Valheim AI\ValheimCompanion\obj\Debug\netstandard2.0\ValheimCompanion.csproj.AssemblyReference.cache
+C:\Users\watso\OneDrive\Documents\Valheim AI\ValheimCompanion\obj\Debug\netstandard2.0\ValheimCompanion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\watso\OneDrive\Documents\Valheim AI\ValheimCompanion\obj\Debug\netstandard2.0\ValheimCompanion.AssemblyInfoInputs.cache
+C:\Users\watso\OneDrive\Documents\Valheim AI\ValheimCompanion\obj\Debug\netstandard2.0\ValheimCompanion.AssemblyInfo.cs
+C:\Users\watso\OneDrive\Documents\Valheim AI\ValheimCompanion\obj\Debug\netstandard2.0\ValheimCompanion.csproj.CoreCompileInputs.cache

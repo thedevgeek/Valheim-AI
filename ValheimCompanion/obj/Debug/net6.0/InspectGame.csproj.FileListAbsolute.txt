@@ -1,0 +1,15 @@
+C:\Users\watso\OneDrive\Documents\Valheim AI\ValheimCompanion\bin\Debug\net6.0\InspectGame.exe
+C:\Users\watso\OneDrive\Documents\Valheim AI\ValheimCompanion\bin\Debug\net6.0\InspectGame.deps.json
+C:\Users\watso\OneDrive\Documents\Valheim AI\ValheimCompanion\bin\Debug\net6.0\InspectGame.runtimeconfig.json
+C:\Users\watso\OneDrive\Documents\Valheim AI\ValheimCompanion\bin\Debug\net6.0\InspectGame.dll
+C:\Users\watso\OneDrive\Documents\Valheim AI\ValheimCompanion\bin\Debug\net6.0\InspectGame.pdb
+C:\Users\watso\OneDrive\Documents\Valheim AI\ValheimCompanion\obj\Debug\net6.0\InspectGame.csproj.AssemblyReference.cache
+C:\Users\watso\OneDrive\Documents\Valheim AI\ValheimCompanion\obj\Debug\net6.0\InspectGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\watso\OneDrive\Documents\Valheim AI\ValheimCompanion\obj\Debug\net6.0\InspectGame.AssemblyInfoInputs.cache
+C:\Users\watso\OneDrive\Documents\Valheim AI\ValheimCompanion\obj\Debug\net6.0\InspectGame.AssemblyInfo.cs
+C:\Users\watso\OneDrive\Documents\Valheim AI\ValheimCompanion\obj\Debug\net6.0\InspectGame.csproj.CoreCompileInputs.cache
+C:\Users\watso\OneDrive\Documents\Valheim AI\ValheimCompanion\obj\Debug\net6.0\InspectGame.dll
+C:\Users\watso\OneDrive\Documents\Valheim AI\ValheimCompanion\obj\Debug\net6.0\refint\InspectGame.dll
+C:\Users\watso\OneDrive\Documents\Valheim AI\ValheimCompanion\obj\Debug\net6.0\InspectGame.pdb
+C:\Users\watso\OneDrive\Documents\Valheim AI\ValheimCompanion\obj\Debug\net6.0\InspectGame.genruntimeconfig.cache
+C:\Users\watso\OneDrive\Documents\Valheim AI\ValheimCompanion\obj\Debug\net6.0\ref\InspectGame.dll
