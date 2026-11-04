@@ -1,5 +1,21 @@
 # Lucy - Valheim Companion
 
+## Screenshots
+
+Lucy in-game:
+
+![Lucy in-game, side view](./screenshots/lucy-side.png)
+
+![Lucy in-game, front view](./screenshots/lucy-front.png)
+
+## Software technologies used
+
+- .NET target: .NET Standard 2.1
+- C# language version: latest (`<LangVersion>latest</LangVersion>`)
+- Mod framework: BepInEx (loaded from the local Valheim BepInEx install and referenced as `BepInEx.dll`)
+- Harmony runtime: 0Harmony (referenced from `$(BepInExDir)\core\0Harmony.dll`)
+- Valheim runtime: the project compiles against the installed Steam Valheim assemblies (`assembly_valheim.dll` and Unity engine DLLs from the local game install)
+
 ## Current stage
 
 **Version 0.40.0 — stable production release.** Lucy uses Valheim's animated wolf creature, defends the player and herself from nearby threats, gathers nearby drops and harvestable plants, and has a white coat, eye patch, and purple collar. Combat, including damage and kills against Neck and Boar enemies, has been verified. Eligible bites receive +15 physical damage, and Lucy is immune to incoming damage.
